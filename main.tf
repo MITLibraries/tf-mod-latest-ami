@@ -1,5 +1,6 @@
 data "aws_ami" "ec2-linux" {
   most_recent = true
+  owners      = ["amazon"]
 
   filter {
     name   = "name"
